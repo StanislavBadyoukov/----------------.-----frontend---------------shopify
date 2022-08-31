@@ -1,0 +1,151 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+:root {
+    --status-new: #FDCFF3;
+    --status-law: #FFCF56;
+    --add: #42940F;
+    --disabled: #4E4E4E;
+    --page-background: #F6F6F6;
+    --card-background: #FFFFFF;
+    --card-info-text: #2F2F2F;
+  }
+  
+  .page__body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--page-background);
+  }
+  
+  .cards-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1440px;
+  }
+  
+  .products-of-the-week-section {
+    padding-top: 16px;
+    padding-bottom: 40px;
+  }
+  
+  .section__title {
+    margin: 0 0 40px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 72px;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cards-container__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  }
+  
+  .card-image {
+    position: relative;
+    min-height: 214px;
+    background-image: url(./img/card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px 12px 0px 0px;
+  }
+  
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px;
+  }
+  
+  .card__title {
+    margin: 0;
+  }
+  
+  .card-status {
+    position: absolute;
+    display: flex;
+  }
+  
+  .card-status__item {
+    padding: 3px 17px;
+    margin: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    text-transform: uppercase;
+  }
+  
+  .card-status__item_new {
+    margin-right: 0;
+    background-color: var(--status-new);
+  }
+  
+  .card-status__item_low {
+    background-color: var(--status-law);
+  }
+  
+  .card-status_hidden {
+    display: none;
+  }
+  
+  .card__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 900;
+  }
+  
+  .card__text {
+    margin: 0 0 23px;
+    min-height: 95px;
+    max-height: 150px;
+    color: var(--card-info-text);
+    overflow: auto;
+    line-height: 24px;
+  }
+  
+  .button {
+    padding: 9px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 900;
+    background: transparent;
+    border-radius: 8px;
+    border-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .button_add {
+    color: var(--add);
+    border: 2px solid var(--add);
+  }
+  
+  .button_add:hover {
+    color: #FFFFFF;
+    background-color: var(--add);
+  }
+  
+  .button_add:active {
+    background-color: #1F5200;
+    color: #FFFFFF;
+  }
+  
+  .button_disabled {
+    background: var(--disabled);
+    color: #FFFFFF;
+    border: 2px solid var(--disabled);
+    cursor: not-allowed;
+  }
